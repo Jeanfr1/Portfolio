@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+header {
+  background-color: #00274d; /* Dark blue */
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center-align header content */
+}
+
+header img {
+  width: 50px; /* Adjust the logo size */
+  margin-right: 20px;
+}
+
+header h1 {
+  font-size: 30px; /* Increase font size for header */
+  margin: 0;
+}
+
+header .contact-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: auto;
+  transition: color 0.3s ease;
+  position: absolute;
+  right: 20px; /* Position contact link to the right */
+}
+
+header .contact-link:hover {
+  color: #ffdd57;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #001f3f; /* Even darker blue */
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffdd57; /* Highlight color on hover */
+}
+
+section {
+  padding: 20px;
+  text-align: center; /* Center-align section titles */
+}
+
+section h2 {
+  font-size: 28px; /* Increase font size for section titles */
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #00274d;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.skills,
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skills img,
+.footer-icons a img {
+  width: 50px; /* Same size as logo */
+  height: 50px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project {
+  flex: 1 1 calc(33% - 40px);
+  max-width: calc(33% - 40px);
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.project:hover img {
+  transform: scale(1.05);
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  color: white;
+  background-color: #00274d;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.project a:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+
+#project-4 {
+  flex: 1 1 calc(33% - 40px); /* Ensure the fourth project has the same width as the others */
+  max-width: calc(33% - 40px);
+}
